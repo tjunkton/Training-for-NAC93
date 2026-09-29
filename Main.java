@@ -15,13 +15,15 @@ public class Main {
 
         int hailstone = Integer.parseInt(input_string);
         // so just don't input anything that isn't an integer please thanks
-        // (everything breaks if you do)e
+        // (everything breaks if you do)
 
         int i = 0;
         // reset the index
-        do {
-            System.out.println(hailstone);
 
+        System.out.println(hailstone);
+        // print the hailstone to start entirely for the sake of making it look like the desired output
+
+        do {
             /*checking if it's even, if it's remainder is 0 then it's even 
             (if it's not then you do the else) (if it's anything else. oh no) */
             if (hailstone % 2 == 0) {
@@ -33,6 +35,11 @@ public class Main {
                 hailstone += 1;
                 // "...multiply by three and add one"
             }
+
+            System.out.println(hailstone);
+            // print it down here so it prints the final output which really should be "1" all of the time
+            // and if it's not. what
+
             i++;
             // bump up the index. because that's how it works! wow
 
